@@ -12,7 +12,7 @@ This is a template repo for [eframe](https://github.com/emilk/egui/tree/master/c
 <!-- Projet-->
 ## Un outil de lancement de Speedrun
 
-Speedrun c'est génial. Mais lancer tout l'attirail pour s'entrainer peut être pénible. En tout cas, je trouve ça pénible 👿. Comme j'ai découvert Egui il y a peu, je me suis dis : j'aimerais un programme qui contient tout le nécessaire pour tout démarrer, au même endroit.
+Speedrun c'est génial. Mais lancer tout l'attirail pour s'entrainer peut être pénible. En tout cas, je trouve ça pénible 👿 Comme j'ai découvert Egui il y a peu, je me suis dis : j'aimerais un programme qui contient tout le nécessaire pour tout démarrer, au même endroit. Voici une beta : 
 
 ![Image](https://cdn.discordapp.com/attachments/830009390089764887/1069011077632897044/image.png)
 
