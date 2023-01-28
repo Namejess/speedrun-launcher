@@ -14,6 +14,8 @@ This is a template repo for [eframe](https://github.com/emilk/egui/tree/master/c
 
 Speedrun c'est génial. Mais lancer tout l'attirail pour s'entrainer peut être pénible. En tout cas, je trouve ça pénible 👿. Comme j'ai découvert Egui il y a peu, je me suis dis : j'aimerais un programme qui contient tout le nécessaire pour tout démarrer, au même endroit.
 
+![Image](https://cdn.discordapp.com/attachments/830009390089764887/1069011077632897044/image.png)
+
 PS : Si vous souhaitez speedrun Oddworld, n'hésitez pas à rejoindre la communauté accueuillante des Oddworld'N'Hangout (anglophone) : https://discord.gg/WtEd7ByASB
 
 ## Updating egui
@@ -21,3 +23,6 @@ PS : Si vous souhaitez speedrun Oddworld, n'hésitez pas à rejoindre la communa
 As of 2022, egui is in active development with frequent releases with breaking changes. [eframe_template](https://github.com/emilk/eframe_template/) will be updated in lock-step to always use the latest version of egui.
 
 When updating `egui` and `eframe` it is recommended you do so one version at the time, and read about the changes in [the egui changelog](https://github.com/emilk/egui/blob/master/CHANGELOG.md) and [eframe changelog](https://github.com/emilk/egui/blob/master/crates/eframe/CHANGELOG.md).
+
+## 🍰 Contributing    
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
