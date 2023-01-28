@@ -65,16 +65,27 @@ impl eframe::App for TemplateApp {
         });
 
         egui::SidePanel::left("side_panel").show(ctx, |ui| {
-            ui.heading("Side Panel");
+            ui.heading("Speedrun Launcher");
 
-            ui.horizontal(|ui| {
-                ui.label("Write something: ");
-                ui.text_edit_singleline(label);
-            });
+            if ui.button("Steam").clicked() {
+                //Launch Steam Big Picture Mode with a game selected (in this case, Oddworld Abe's Oddysee)
+                let _ = std::process::Command::new("C:/Program Files (x86)/Steam/steam.exe")
+                    .arg("-bigpicture")
+                    .arg("-applaunch")
+                    .arg("22330")
+                    .spawn();
+            }
 
-            ui.add(egui::Slider::new(value, 0.0..=10.0).text("value"));
-            if ui.button("Increment").clicked() {
-                *value += 1.0;
+            if ui.button("LiveSplit").clicked() {
+                let _ =
+                    std::process::Command::new("C:/Jeux/Speedrun/LiveSplit_1.8.15/LiveSplit.exe")
+                        .spawn();
+            }
+
+            if ui.button("Dxwnd").clicked() {
+                let _ =
+                    std::process::Command::new("C:/Jeux/Speedrun/v2_05_50_build_rc6mv/dxwnd.exe")
+                        .spawn();
             }
 
             ui.with_layout(egui::Layout::bottom_up(egui::Align::LEFT), |ui| {
@@ -93,15 +104,19 @@ impl eframe::App for TemplateApp {
         });
 
         egui::CentralPanel::default().show(ctx, |ui| {
-            // The central panel the region left after adding TopPanel's and SidePanel's
-
-            ui.heading("eframe template");
-            ui.hyperlink("https://github.com/emilk/eframe_template");
-            ui.add(egui::github_link_file!(
-                "https://github.com/emilk/eframe_template/blob/master/",
-                "Source code."
-            ));
-            egui::warn_if_debug_build(ui);
+            // hyperlink to a website
+            ui.hyperlink_to(
+                "World first run",
+                "https://www.youtube.com/watch?v=bosFFabPdug&t=3s",
+            );
+            ui.hyperlink_to(
+                "Leaderboard",
+                "https://www.speedrun.com/abe1/full_game?h=Any_NMG-PC&x=ndx9xvdq-2lg3jjen.mln94vnq",
+            );
+            ui.hyperlink_to(
+                "Mes notes",
+                "https://docs.google.com/document/d/1dIRkU3nuruif_q--gWAh2kWkhGGFiPn31-5fBsaSh6k/edit",
+            );
         });
 
         if false {
