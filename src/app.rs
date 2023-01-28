@@ -1,3 +1,5 @@
+use egui::{color_picker, Color32, Response, Ui};
+
 /// We derive Deserialize/Serialize so we can persist app state on shutdown.
 #[derive(serde::Deserialize, serde::Serialize)]
 #[serde(default)] // if we add new fields, give them default values when deserializing old state
@@ -68,17 +70,25 @@ impl eframe::App for TemplateApp {
             ui.heading("Speedrun Launcher");
 
             if ui.button("Steam").clicked() {
-                //Launch Steam Big Picture Mode with a game selected (in this case, Oddworld Abe's Oddysee)
-                let _ = std::process::Command::new("C:/Program Files (x86)/Steam/steam.exe")
-                    .arg("-bigpicture")
-                    .arg("-applaunch")
-                    .arg("22330")
-                    .spawn();
-            }
+                {
+                    //Launch Steam Big Picture Mode with a game selected (in this case, Oddworld Abe's Oddysee)
+                    let _ = std::process::Command::new("C:/Program Files (x86)/Steam/steam.exe")
+                        .arg("-bigpicture")
+                        .arg("-applaunch")
+                        .arg("22330")
+                        .spawn();
+                }
+            };
 
             if ui.button("LiveSplit").clicked() {
                 let _ =
                     std::process::Command::new("C:/Jeux/Speedrun/LiveSplit_1.8.15/LiveSplit.exe")
+                        .spawn();
+            }
+
+            if ui.button("Obs").clicked() {
+                let _ =
+                    std::process::Command::new("C:/Program Files/obs-studio/bin/64bit/obs64.exe")
                         .spawn();
             }
 
