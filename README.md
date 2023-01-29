@@ -9,14 +9,14 @@
 
 This is a template repo for [eframe](https://github.com/emilk/egui/tree/master/crates/eframe), a framework for writing apps using [egui](https://github.com/emilk/egui/).
 
-<!-- Projet-->
-## Un outil de lancement de Speedrun
+<!-- Project-->
+## A Speedrun launching tool
 
-Speedrun c'est génial. Mais lancer tout l'attirail pour s'entrainer peut être pénible. En tout cas, je trouve ça pénible 👿 Comme j'ai découvert Egui il y a peu, je me suis dis : j'aimerais un programme qui contient tout le nécessaire pour tout démarrer, au même endroit. Voici une beta : 
+Speedrunning is great. But launching all the gear to train can be tedious. Anyway, I find it tedious 👿 Since I recently discovered Egui, I thought to myself: I would like a program that contains everything necessary to start everything in one place. Here's a beta:
 
 ![Image](https://cdn.discordapp.com/attachments/830009390089764887/1069011077632897044/image.png)
 
-PS : Si vous souhaitez speedrun Oddworld, n'hésitez pas à rejoindre la communauté accueuillante des Oddworld'N'Hangout (anglophone) : https://discord.gg/WtEd7ByASB
+PS: If you want to speedrun Oddworld, feel free to join the welcoming Oddworld'N'Hangout community (English-speaking): https://discord.gg/WtEd7ByASB
 
 ## Updating egui
 
